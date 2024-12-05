@@ -80,8 +80,29 @@ nav a:hover
 
 .imagemcentral{
     border-radius: 50%;
-    display:flex;
-    
-    
-    
+    width: 350px;
+    position: relative;
+    display: flex;
+    bottom: -250px;
+    left: 50px;
+    animation: subirDescer 0.7s infinite alternate;
+    box-shadow:0 0 25px #23fa07;
+}
+
+@keyframes subirDescer{
+    from{
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+.secaocentral{
+    display: flex;
+    align-content: center;
+    align-items: flex-end;
+  
+
+
 }
