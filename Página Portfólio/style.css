@@ -170,15 +170,26 @@ nav a:hover
 }
 
 .projetos{
-display: flex;
-align-items: center;
-justify-content: space-around;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    gap: 100px;
+    margin-left: 25px;
+    
 }
 .projetos01,
 .projetos02,
-.projetos03{
+.projetos03,
+.projetos04{
     border: #23fa07 2px solid;
     width: 250px;
     height: 280px;
-    
+   
+}
+
+.rodape{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
