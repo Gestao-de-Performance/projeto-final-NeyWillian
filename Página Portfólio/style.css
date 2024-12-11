@@ -7,27 +7,27 @@
     text-decoration: none;
     border: none;
     outline: none;
-    font-family: "sarala";
+    
 }
 
 body{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow-x: hidden;
     background: black;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #particles-js{
    width: 100%;
-   height: 100vh;
+   height: 100%;
    position: absolute;
+   z-index: -1;
 
 }
 
 header{
     margin-top: 20px;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -41,11 +41,17 @@ header{
 }
 
 .logo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 3rem;
-    color: #23fa07;
-    font-weight: 600;
+    color: white;
+    font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
+}
+
+.logospan{
+    color: #23fa07;
+    text-shadow: 0 0 10px #23fa07;
 }
 
 .logo:hover{
@@ -55,12 +61,13 @@ header{
 nav a
 {
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: white;
     margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav a:hover
@@ -69,24 +76,14 @@ nav a:hover
     border-bottom: 3px solid;
 }
 
-
-.secaocentral{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-}
-
 .imagemcentral{
+    margin-left: 10%;
+    margin-top: 5%;
     border-radius: 50%;
-    width: 350px;
-    position: relative;
-    display: flex;
-    bottom: -250px;
-    left: 50px;
+    width: 250px;
     animation: subirDescer 0.7s infinite alternate;
     box-shadow:0 0 25px #23fa07;
+    
 }
 
 @keyframes subirDescer{
@@ -94,15 +91,94 @@ nav a:hover
         transform: translateY(0px);
     }
     to {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
     }
 }
 
+
 .secaocentral{
+    color: white;
     display: flex;
-    align-content: center;
-    align-items: flex-end;
-  
+    gap:3%;
+    padding-top: 5%;
+    flex-wrap: wrap;
+    align-items: center;
 
+}
 
+.escrever{
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+    border-right: 2px solid #23fa07;
+    display:  inline-block;
+    animation:escrever 4s steps(12 end), piscar 0.5s step-end infinite;
+    white-space: nowrap;
+
+}
+
+@keyframes escrever{
+    from{ width:0;}
+    to{width: 100%;}
+    
+}
+@keyframes piscar{
+    from, to {border-color:transparent;}
+    50%{border-color: #23fa07}
+}
+
+.skilltitulo{
+    size: 1.9rem;
+    color: #23fa07;
+    text-shadow: 0 0 10px #23fa07
+    
+}
+
+.skilltitulo:hover{
+    transform: scale(1.1);
+}
+
+.Skillss{
+    margin-top: 50px;
+    background-color: rgb(12, 12, 12);
+    color: #23fa07;
+    width: 100%;
+    height: 150px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0.7;
+}
+
+.skill1{
+    color:#23fa07;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.skill1:hover{
+    color: b#23fa07;
+    border-bottom: 3px solid;
+    transform: scale(1.1)
+}
+
+.projetos{
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.projetos01,
+.projetos02,
+.projetos03{
+    border: #23fa07 2px solid;
+    width: 250px;
+    height: 280px;
+    
 }
