@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/65f824f900.js" crossorigin="anonymous"></script>
+
+</head>
+<body>     
+  <div id="particles-js">
+    <script src="JS/particles.min.js"></script>
+    <script src="JS/particlesjs-config.json"></script>
+    <script src="JS/app.js"></script>
+    <script>
+        particlesJS('particles-js',
+  
+  {
+    "particles": {
+      "number": {
+        "value": 80,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#23fa07"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100,
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 3,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#23fa07",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": false,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": false,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  }
+);
+    </script>
+    
+  </div>       
+
+  <header>
+      <a href="#" class="logo">Ney <span class="logospan">Willian</span></a>
+
+    <nav class="nav">
+      <a href="#Home" class="Home">Home</a>
+      <a href="#Sobre" class="Sobre">Sobre</a>
+      <a href="#Portfólio" class="Portfólio">Portfólio</a>
+      <a href="#Skills" class="Skills">Skills</a>
+      <a href="#Contato" class="Contato">Contato</a>
+    </nav>
+  </header>
+    
+  <div  class="secaocentral">
+    <img class="imagemcentral" src="imagens/foto Ney.jpg" alt="foto do desenvolvedor">
+    
+    <div>
+      <h1 class="h1apresentacao">Olá, sou o <span>Ney<span>.</h1>
+        <h2 class="h2apresentacao">Sou um <span class="escrever">desenvolvedor.</span></h2>
+        <p class="texto">Formado em Administração, estou agora em transição de carreira,<br> e busco aperfeiçoar minhas habilidades para ingressar no mercado de trabalho e fazer a diferença.</p>
+    </div>
+  </div>
+
+  <div class="Skillss">
+    <h2 class="skilltitulo">Skills</h2>
+    <a href="#GitHub" class="skill1">GitHub</a>
+    <a href="#HTML" class="skill1">HTML</a>
+    <a href="#CSS" class="skill1">CSS</a>
+  </div>
+
+    <div class="projetos"> 
+     <h2 class="projetos01">Projeto 01
+      <img class="imagemprojeto" src="imagens/WhatsApp Image 2024-12-13 at 20.45.07.jpeg" alt="projetos01">
+     </h2>
+     <h2 class="projetos02">Projeto 02</h2>
+     <h2 class="projetos03">Projeto 03</h2> 
+     <h2 class="projetos04">Projeto 04</h2>
+    </div>
+    
+  <footer class="rodape">
+    <div>
+      <h2 class="h2rodape">Contato</h2>
+      <form class="formulario"action="Formulario">
+        <p><input class="caixanome" placeholder="Digite seu nome completo" type="text" name="nome" id="nome"></p>
+        <p><input class="caixanumero"placeholder="Digite seu celular" input="number"></p>
+        <p><input class="caixatexto" placeholder="Descreva sua necessidade"input="text" name="Descrição da necessidade do cliente" id="Descrição da necessidade do cliente"></p>
+        <button class="botaoenviar">Enviar</button>
+      </form>
+    </div>
+    <div class="socialicons">
+      <a href="#"><i class="fa-brands fa-facebook" style="color: #23fa07;"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter" style="color: #23fa07;"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram" style="color: #23fa07;"></i></a>
+      <a href=""><i class="fa-brands fa-github" style="color: #23fa07;"></i></a>
+      <a href=""><i class="fa-brands fa-linkedin" style="color: #23fa07;"></i></a>
+    </div>
+
+  </footer>
+  <h3 class="direitos">Todos os direitos reservados! @Ney Willian</h3>
+</body>
+</html>
